@@ -20,8 +20,8 @@ var answer1 = prompt('Do you think I have any siblings?');
 // do this stuff
 //}
 
-// Tell user if they are wrong or right
-if (answer === 'yes' || answer1 === 'y'){
+// Tell user if they are right or wrong
+if (answer1.toLowerCase() === 'yes' || answer1.toLowerCase() === 'y'){
     // right answer
     alert('You got it right!!!');
     console.log('The user got the correct answer to Q1 (yes)');
