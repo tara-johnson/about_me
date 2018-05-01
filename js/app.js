@@ -62,15 +62,19 @@ if (answer4.toLowerCase() === 'yes' || answer4.toLowerCase() === 'y'){
 } else {
     // Right answer to Q4
     alert('Right. No pets. I did have a fish named Taco once, though. I love tacos.');
-    console.log('The user got the right answer to Q4 (no)');
+    console.log('The user got the correct answer to Q4 (no)');
 }
 
 // Ask the fifth guessing game question
+var answer5 = prompt('Do I love tacos?');
 
 // Tell user if they are right or wrong
-
-// if (condition is true) {
-// do this stuff
-// } else {
-// do this stuff
-//}
+if (answer5.toLowerCase() === 'yes' || answer5.toLowerCase() === 'y'){
+    // Right answer to Q5
+    alert('I gave this one away. It\'s true, I love tacos.');
+    console.log('The user got the correct answer to Q5 (yes)');
+} else {
+    // Wrong answer to Q5
+    alert('C\'mon, I just told you. I LOVE tacos!');
+    console.log('The user got the wrong answer to Q5 (no)');
+}
