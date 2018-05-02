@@ -1,5 +1,8 @@
 'use strict';
 
+// Variable to tally correct answers
+var correctAnswer = "0"
+
 // Ask for user's name
 var userName = prompt('Hey! What\'s your name!');
 
@@ -17,14 +20,21 @@ if (answer1.toLowerCase() === 'yes' || answer1.toLowerCase() === 'y'){
     alert('Take another look. They\'re brown! :)');
     // Log wrong answer to Q1 in console
     console.log('The user got the wrong answer to Q1 (yes)');
-} else {
+
+} else if  (answer1.toLowerCase() === 'no' || answer1.toLowerCase() === 'n'){
     // Correct answer to Q1
     alert('That\'s right! My eyes are brown.');
+
     // Log correct answer to Q1 in console
     console.log('The user got the correct answer to Q1 (no)');
-   
+    
     // Tally +1 for correct answer
+    correctAnswer++;
+    console.log('The user has answered ' + correctAnswer + ' questions correctly.');
 
+} else {
+    // Add force to answer question
+    answer1 = prompt(' At least take a guess. Do I have blue eyes?');
 }
 
 // Ask the second guessing game question in an alert
@@ -43,6 +53,8 @@ if (answer2.toLowerCase() === 'yes' || answer2.toLowerCase() === 'y'){
     console.log('The user got the correct answer to Q2 (no)');    
 
     // Tally +1 for correct answer
+    correctAnswer++;
+    console.log('The user has answered ' + correctAnswer + ' questions correctly.');
 
 }
 
@@ -57,6 +69,8 @@ if (answer3.toLowerCase() === 'yes' || answer3.toLowerCase () === 'y'){
     console.log('The user got the correct answer to Q3 (yes)');    
 
     // Tally +1 for correct answer
+    correctAnswer++;
+    console.log('The user has answered ' + correctAnswer + ' questions correctly.');
 
 } else {
     // Wrong answer to Q3
@@ -80,7 +94,9 @@ if (answer4.toLowerCase() === 'yes' || answer4.toLowerCase() === 'y'){
     // Log correct answer to Q4 in console
     console.log('The user got the correct answer to Q4 (no)');
 
-    // Tally +1 for correct answer    
+    // Tally +1 for correct answer
+    correctAnswer++;
+    console.log('The user has answered ' + correctAnswer + ' questions correctly.');   
 
 }
 
@@ -95,6 +111,8 @@ if (answer5.toLowerCase() === 'yes' || answer5.toLowerCase() === 'y'){
     console.log('The user got the correct answer to Q5 (yes)');
 
     // Tally +1 for correct answer
+    correctAnswer++;
+    console.log('The user has answered ' + correctAnswer + ' questions correctly.');
 
 } else {
     // Wrong answer to Q5
@@ -104,12 +122,31 @@ if (answer5.toLowerCase() === 'yes' || answer5.toLowerCase() === 'y'){
 }
 
 // Ask the sixth guessing game question in an alert
+var answer6 = prompt('How many years have I lived in Seattle');
 
 // Tell user if they are right or wrong
-// If right move to next question
-// Tally +1 for correct answer
-// Else let user guess again (indicating too high or too low) for a total of four times
 
+if (answer6 === "12"){
+    // Right answer to Q6
+    alert('You got it! 12 years.');
+
+    // Tally +1 for correct answer
+    correctAnswer++;
+    console.log('The user has answered ' + correctAnswer + ' questions correctly.');
+
+} else {
+    // Wrong answer to Q6. Allow user to guess 4 times.
+    var counter = 0;
+    while (counter < 4 && answer6 !== "12"){
+
+        // if higher
+        answer6 = prompt('Not quite. Guess again.');
+        counter++;
+
+        // else
+
+    }
+}
 
 // Ask the seventh guessing game question in an alert
 
@@ -118,4 +155,7 @@ if (answer5.toLowerCase() === 'yes' || answer5.toLowerCase() === 'y'){
 // Tally +1 for correct answer
 // Else let user guess again for a total of six times
 
-// Show user how many questions they got right and wrong
+
+// Show user how many questions they got right
+var endGame = alert('Thanks for getting to know me, ' + userName + '. You got ' + counter + ' out of 7 questions correct!');
+console.log('Game over. The user got ' + counter + ' out of 7 questions correct.');
