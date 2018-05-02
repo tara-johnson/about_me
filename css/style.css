@@ -1,3 +1,41 @@
-* {
-    color: blue;
+body {
+    padding: 20px 20px 0px 20px;
+    font-family: Arial, Helvetica, sans-serif;    
 }
+
+h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+div {
+    background-color: white;
+    padding: 10px 0px 0px 0px;
+}
+
+p {
+    color: white;
+    padding: 30px 30px 30px 30px;
+    font-size: 30px; 
+}
+
+p.sectionBrown {
+    background-color: #311D00;
+}
+
+p.sectionRed {
+    background-color: #6F263D;
+}
+
+p.sectionBlue {
+    background-color: #041E42;
+}
+
+p.sectionYellow {
+    background-color: #FFB81C;
+}
+
+p.sectionBlack {
+    background-color: #000000;
+}
+
