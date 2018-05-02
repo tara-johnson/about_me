@@ -1,21 +1,26 @@
 body {
-    padding: 20px 20px 0px 20px;
+    margin: 20px;
     font-family: Arial, Helvetica, sans-serif;    
 }
 
-h1 {
-    font-size: 20px;
+div {
+    margin: 10px 0px 0px 0px;
+}
+
+td {
+    padding: 0px 20px 0px 0px;
+    vertical-align: middle;
+}
+
+.nameHeaderText {
+    color: #000000;
+    font-size: 30px;
     font-weight: bold;
 }
 
-div {
-    background-color: white;
-    padding: 10px 0px 0px 0px;
-}
-
 p {
-    color: white;
-    padding: 30px 30px 30px 30px;
+    padding: 30px;
+    color: #FFFFFF;
     font-size: 30px; 
 }
 
@@ -38,4 +43,3 @@ p.sectionYellow {
 p.sectionBlack {
     background-color: #000000;
 }
-

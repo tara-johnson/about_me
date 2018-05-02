@@ -1,80 +1,89 @@
 'use strict';
 
 // Ask for user's name
-var userName = prompt('Hey! What is your name!');
+var userName = prompt('Hey! What\'s your name!');
 
 // Greet the user by name in an alert
-alert('Hi, ' + userName + ', thanks for stopping by!');
-
-// Log that to the console
+alert('Hi, ' + userName + ', nice to meet you!');
+// Log user greeting in console
 console.log('The user said their name is ' + userName);
 
-// Ask the first guessing game question
+// Ask the first guessing game question in an alert
 var answer1 = prompt('Do I have blue eyes?');
 
 // Tell user if they are right or wrong
 if (answer1.toLowerCase() === 'yes' || answer1.toLowerCase() === 'y'){
     // Wrong answer to Q1
     alert('Take another look. They\'re brown! :)');
+    // Log wrong answer to Q1 in console
     console.log('The user got the wrong answer to Q1 (yes)');
 } else {
-    // Right answer to Q1
-    alert('That\'s right!');
+    // Correct answer to Q1
+    alert('That\'s right! My eyes are brown.');
+    // Log correct answer to Q1 in console
     console.log('The user got the correct answer to Q1 (no)');
 }
 
-// Ask the second guessing game question
+// Ask the second guessing game question in an alert
 var answer2 = prompt('Am I from Seattle?');
 
 // Tell user if they are right or wrong
 if (answer2.toLowerCase() === 'yes' || answer2.toLowerCase() === 'y'){
     // Wrong answer to Q2
-    alert('Nope. I grew up in Cleveland, Ohio. \nI\'ve been in Seattle for 12 years though!');
+    alert('Nope. I grew up in Cleveland, Ohio. I\'ve been in Seattle for 12 years.');
+    // Log wrong answer to Q2 in console
     console.log('The user got the wrong answer to Q2 (yes)');
 } else {
-    // Right answer to Q2
-    alert('That\'s right! I grew up in Cleveland, Ohio.');
+    // Correct answer to Q2
+    alert('You\'re right, I\'m not from Seattle! I grew up in Cleveland, Ohio.');
+    // Log correct answer to Q2 in console
     console.log('The user got the correct answer to Q2 (no)');    
 }
 
-// Ask the third guessing game question
+// Ask the third guessing game question in an alert
 var answer3 = prompt('Have I lived in more than 3 states?');
 
 // Tell user if they are right or wrong
 if (answer3.toLowerCase() === 'yes' || answer3.toLowerCase () === 'y'){
     // Right answer to Q3
-    alert('It\s true, ' + userName + '! I\'ve lived in Ohio, Michigan, New York, and Washington.');
+    alert('That\'s right, ' + userName + '. I\'ve lived in four states - Ohio, Michigan, New York, and Washington.');
+    // Log correct answer to Q3 in console
     console.log('The user got the correct answer to Q3 (yes)');    
 } else {
     // Wrong answer to Q3
-    alert('Wrong! Close though. I\'ve lived in four states - Ohio, Michigan, New York, and Washington.');
+    alert('Wrong! I\'ve lived in four states - Ohio, Michigan, New York, and Washington.');
+    // Log wrong answer to Q3 in console
     console.log('The user got the wrong answer to Q3 (no)');
 }
 
-// Ask the fourth guessing game question
+// Ask the fourth guessing game question in an alert
 var answer4 = prompt('Do I have any pets?');
 
 // Tell user if they are right or wrong
 if (answer4.toLowerCase() === 'yes' || answer4.toLowerCase() === 'y'){
     // Wrong answer to Q4
-    alert('Nope, no pets. I did have a fish named Taco once, though. I love tacos.');
+    alert('Nope, no pets. I did have a fish named Taco once, though. \nI love tacos.');
+    // Log wrong answer to Q4 in console
     console.log('The user got the wrong answer to Q4 (yes)');
 } else {
     // Right answer to Q4
-    alert('Right. No pets. I did have a fish named Taco once, though. I love tacos.');
+    alert('Right, no pets. I did have a fish named Taco once, though. \nI love tacos.');
+    // Log correct answer to Q4 in console
     console.log('The user got the correct answer to Q4 (no)');
 }
 
-// Ask the fifth guessing game question
+// Ask the fifth guessing game question in an alert
 var answer5 = prompt('Do I love tacos?');
 
 // Tell user if they are right or wrong
 if (answer5.toLowerCase() === 'yes' || answer5.toLowerCase() === 'y'){
     // Right answer to Q5
     alert('I gave this one away. It\'s true, I love tacos.');
+    // Log correct answer to Q5 in console
     console.log('The user got the correct answer to Q5 (yes)');
 } else {
     // Wrong answer to Q5
     alert('C\'mon, I just told you. I LOVE tacos!');
+    // Log wrong answer to Q5 in console
     console.log('The user got the wrong answer to Q5 (no)');
 }
