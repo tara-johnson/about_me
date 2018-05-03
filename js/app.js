@@ -172,30 +172,52 @@ if (answer6 === '12'){
 
 } else {
     // Wrong answer to Q6. Allow user to guess 4 times.
-    var counter = 0;
-    while (counter < 3 && answer6 !== '12'){
+    var counterQ6 = 0;
+    while (counterQ6 < 3 && answer6 !== '12'){
         // Answer is more than 12
         if (answer6 > 12){
             answer6 = prompt('Not quite that long.Hmm. Guess again.');
-            counter++;
+            counterQ6++;
         
         // Answer is less than 12    
         } else {
             (answer6 < 12)
             answer6 = prompt('A little longer than that. Take another stab at it.');
-            counter++;
+            counterQ6++;
         }
     }
 }
 
 // Ask the seventh guessing game question in an alert
+var counterQ7 = 0;
+var userWrong = true;
+var stateGuessAmount = '6';
 
-// Tell user if they are right or wrong
+while (userWrong = true && counterQ7 < 6){
+    var answer7 = prompt('What states have I lived in?');
+    console.log('User said ' + answer7);
+    var stateArray = ['ohio', 'michigan', 'new york', 'washington'];
+
+        for (var i = 0; i < stateArray.length; i++){
+
+        // Tell the user they are right or wrong
+            if (answer7.toLowerCase() === stateArray[i]){
+            // Right answer to Q7
+            alert('Yes! I lived in in ' + stateArray[i] + ' Great guess!');
+            console.log('Testing ' + stateArray[i] + '.');
+            userWrong = false;
+        }
+        
+    }
+    counterQ7++
+}
+
+
 // If right show user all other choices as well
 // Tally +1 for correct answer
 // Else let user guess again for a total of six times
 
 
 // Show user how many questions they got right
-var endGame = alert('Thanks for getting to know me, ' + userName + '. You got ' + counter + ' out of 7 questions correct!');
-console.log('Game over. The user got ' + counter + ' out of 7 questions correct.');
+var endGame = alert('Thanks for getting to know me, ' + userName + '. You got ' + correctAnswer + ' out of 7 questions correct!');
+console.log('Game over. The user got ' + correctAnswer + ' out of 7 questions correct.');
