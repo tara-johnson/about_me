@@ -204,7 +204,7 @@ if (answer6 === '12'){
 //Try putting variables in while loop
 
 // var stateGuessAmount = '6';
-
+ 
 var counterQ7 = 0
 var userWrong = true;
 
