@@ -43,3 +43,13 @@ p.sectionYellow {
 p.sectionBlack {
     background-color: #000000;
 }
+
+.topTenList {
+    border: black solid 2px;
+    width: 400px;
+}
+
+.topTenListList {
+    border: red solid 2px;
+    width: 400px;
+}
