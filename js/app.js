@@ -15,6 +15,8 @@ console.log('The user said their name is ' + userName);
 // Ask the first guessing game question in an alert
 var answer1 = prompt('Do I have blue eyes?');
 
+//create function for first question
+function firstQuestion (){
 // Tell user if they are right or wrong
 if (answer1.toLowerCase() === 'yes' || answer1.toLowerCase() === 'y'){
     // Wrong answer to Q1
@@ -36,11 +38,15 @@ if (answer1.toLowerCase() === 'yes' || answer1.toLowerCase() === 'y'){
 
 } 
 // else {
-//     // Add force to answer question
-//     while (answer1 === ''){
-//         answer1 = prompt('At least take a guess.');
-//     }
-// }
+    //     // Add force to answer question
+    //     while (answer1 === ''){
+        //         answer1 = prompt('At least take a guess.');
+        //     }
+        // }
+}
+
+//ask first question
+firstQuestion();
 
 // Ask the second guessing game question in an alert
 var answer2 = prompt('Am I from Seattle?');
