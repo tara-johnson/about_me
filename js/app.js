@@ -51,6 +51,9 @@ firstQuestion();
 // Ask the second guessing game question in an alert
 var answer2 = prompt('Am I from Seattle?');
 
+//create function for second question
+function secondQuestion(){
+
 // Tell user if they are right or wrong
 if (answer2.toLowerCase() === 'yes' || answer2.toLowerCase() === 'y'){
     // Wrong answer to Q2
@@ -72,15 +75,23 @@ if (answer2.toLowerCase() === 'yes' || answer2.toLowerCase() === 'y'){
 
 } 
 // else {
-//     // Add force to answer question
-//     while (answer2 === ''){
-//         answer2 = prompt('At least take a guess!');
-//     }
-// }
+    //     // Add force to answer question
+    //     while (answer2 === ''){
+        //         answer2 = prompt('At least take a guess!');
+        //     }
+        // }
+        
+        // Ask the third guessing game question in an alert
+    }
 
-// Ask the third guessing game question in an alert
+secondQuestion();
+
 var answer3 = prompt('Have I lived in more than 3 states?');
 
+
+//create funtion for third question
+function thirdQuestion(){
+        
 // Tell user if they are right or wrong
 if (answer3.toLowerCase() === 'yes' || answer3.toLowerCase () === 'y'){
     // Right answer to Q3
@@ -107,9 +118,16 @@ if (answer3.toLowerCase() === 'yes' || answer3.toLowerCase () === 'y'){
 //         answer3 = prompt('At least take a guess!');
 //     }
 // }
+}
+
+
+thirdQuestion();
 
 // Ask the fourth guessing game question in an alert
 var answer4 = prompt('Do I have any pets?');
+
+//create function for fourth question
+function fourthQuestion(){
 
 // Tell user if they are right or wrong
 if (answer4.toLowerCase() === 'yes' || answer4.toLowerCase() === 'y'){
@@ -137,9 +155,16 @@ if (answer4.toLowerCase() === 'yes' || answer4.toLowerCase() === 'y'){
 //         answer4 = prompt('At least take a guess!');
 //     }
 // }
+}
 
+
+fourthQuestion();
 // Ask the fifth guessing game question in an alert
 var answer5 = prompt('Do I love tacos?');
+
+
+//create function for fifth question
+function fifthQuestion(){
 
 // Tell user if they are right or wrong
 if (answer5.toLowerCase() === 'yes' || answer5.toLowerCase() === 'y'){
@@ -167,10 +192,16 @@ if (answer5.toLowerCase() === 'yes' || answer5.toLowerCase() === 'y'){
 //         answer5 = prompt('At least take a guess!');
 //     }
 // }
+}
+
+fifthQuestion();
+
 
 // Ask the sixth guessing game question in an alert
 var answer6 = prompt('How many years have I lived in Seattle');
 
+
+function sixthQuestion(){
 // Tell user if they are right or wrong
 
 if (answer6 === '12'){
@@ -200,7 +231,9 @@ if (answer6 === '12'){
         }
     }
 }
+}
 
+sixthQuestion();
 // Ask the seventh guessing game question in an alert
 // Tell user if they are right or wrong
 // If right move to end of quiz and HTML page
@@ -213,6 +246,10 @@ if (answer6 === '12'){
 
 var counterQ7 = 0
 var userWrong = true;
+
+//create function for seventh question
+
+function seventhQuestion(){
 
 while (userWrong = true || counterQ7 < 6){
     
@@ -243,7 +280,9 @@ while (userWrong = true || counterQ7 < 6){
             } 
         }
     }
+}
 
+seventhQuestion();
 // Show user how many questions they got right
 var endGame = alert('Thanks for getting to know me, ' + userName + '. You got ' + correctAnswer + ' out of 7 questions correct!');
 console.log('Game over. The user got ' + correctAnswer + ' out of 7 questions correct.');
