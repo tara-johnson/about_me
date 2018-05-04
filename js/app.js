@@ -35,8 +35,7 @@ if (answer1.toLowerCase() === 'yes' || answer1.toLowerCase() === 'y'){
     // Tally +1 for correct answer
     correctAnswer++;
     console.log('The user has answered ' + correctAnswer + ' questions correctly.');
-
-} 
+    } 
 // else {
     //     // Add force to answer question
     //     while (answer1 === ''){
@@ -234,55 +233,35 @@ if (answer6 === '12'){
 }
 
 sixthQuestion();
-// Ask the seventh guessing game question in an alert
-// Tell user if they are right or wrong
-// If right move to end of quiz and HTML page
-// If wrong, let user guess up to 6 times before ending quiz
 
-// // Q7 starts with user in While Loop
-//Try putting variables in while loop
+// Variables for guessing states I've live in question
+var state = ['michigan', 'new york']
+var maxGuessQ7 = 6;
+var wrongGuess = 0;
 
-// var stateGuessAmount = '6';
- 
-var counterQ7 = 0
-var userWrong = true;
-
-//create function for seventh question
-
-function seventhQuestion(){
-
-while (userWrong = true || counterQ7 < 6){
-    
-    // Ask the seventh guessing game question in an alert
-    var answer7 = prompt('What states have I lived in?');
-    console.log('User guessed ' + answer7);
-    console.log(counterQ7);
-
-    var stateArray = ['ohio', 'michigan', 'new york', 'washington'];
-
-        for (var i = 0; i < stateArray.length; i++){
-            // Right answer to Q7
-            if (answer7.toLowerCase() == stateArray[i]){
-                alert('Yes! Great guess! I\'ve lived in Ohio, Michigan, New York, and Washington.');
-                console.log('User got the right answer, ' + stateArray[i] + '.');
-                userWrong = false;
-                console.log(userWrong);
-
-            // Wrong answer to Q7
-            } else {
-                (answer7.toLowerCase() != stateArray[i]);
-                answer7 = prompt('Nope. I\'ve never lived in ' + answer7 + '. Try again.');
-                console.log('User got the wrong answer ' + counterQ7 + ' times.');
-                // answer7 = prompt('What states have I lived in?');                
-                // Increase counter each time user guesses wrong  
-                counterQ7++;
-                console.log(counterQ7);         
-            } 
+// Create function for guessing states I've lived in
+function guessState(){
+    while (wrongGuess < maxGuessQ7){
+        var answer7 = prompt('What states, other than Ohio and Washington, have I lived in?');
+        if (state.includes(answer7) === true){
+            alert('That\'s right! I\'ve lived in Ohio, Michigan, New York, and Washington.');
+            break;
+        } else if (answer7 === ('ohio') || answer7 === ('washington')) {
+            alert('No, no... not Ohio or Washington. Take another stab at it.');
+            wrongGuess++;
+        } else {
+            alert('Nope, I haven\'t live in ' + answer7 + ' . Take another guess.');
+            wrongGuess++;
+            }
         }
+    if (wrongGuess >= maxGuessQ7){
+    alert('Oh no! You\'ve used all your guesses. And since you asked, I\'ve lived in Ohio, Michigan, New York, and Washington.');
     }
 }
 
-seventhQuestion();
+// Call function for guessing states I've lived in question
+guessState();
+
 // Show user how many questions they got right
 var endGame = alert('Thanks for getting to know me, ' + userName + '. You got ' + correctAnswer + ' out of 7 questions correct!');
 console.log('Game over. The user got ' + correctAnswer + ' out of 7 questions correct.');
