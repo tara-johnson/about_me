@@ -245,17 +245,24 @@ function guessState(){
         var answer7 = prompt('What states, other than Ohio and Washington, have I lived in?');
         if (state.includes(answer7) === true){
             alert('That\'s right! I\'ve lived in Ohio, Michigan, New York, and Washington.');
+            
+            // Tally +1 for correct answer
+            correctAnswer++;
+            console.log('The user has answered ' + correctAnswer + ' questions correctly.');
             break;
         } else if (answer7 === ('ohio') || answer7 === ('washington')) {
             alert('No, no... not Ohio or Washington. Take another stab at it.');
             wrongGuess++;
+            console.log('The user guessed ' + answer7 + '.');
         } else {
             alert('Nope, I haven\'t live in ' + answer7 + ' . Take another guess.');
             wrongGuess++;
+            console.log('The user guessed ' + answer7 + '.');
             }
         }
     if (wrongGuess >= maxGuessQ7){
     alert('Oh no! You\'ve used all your guesses. And since you asked, I\'ve lived in Ohio, Michigan, New York, and Washington.');
+    console.log('The user ran out of guesses.');
     }
 }
 
