@@ -1,15 +1,17 @@
 body {
-    margin: 20px;
-    font-family: Arial, Helvetica, sans-serif;    
+    margin: 20px 20px 100px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border: 1px solid black; */
+    background-image: url("../img/seamless_grey.jpg"); background-repeat: repeat;
 }
 
-div {
-    margin: 10px 0px 0px 0px;
-}
+/* div {
+    margin: 0px 0px 0px 0px;
+    border: 1px solid black;
+} */
 
-td {
-    padding: 0px 20px 0px 0px;
-    vertical-align: middle;
+p {
+    padding: 0px 0px 5px 0px;
 }
 
 .nameHeaderText {
@@ -18,30 +20,78 @@ td {
     font-weight: bold;
 }
 
-p {
-    padding: 30px;
-    color: #FFFFFF;
-    font-size: 30px; 
+.photoBackground {
+    float: right;
+    background-color: #FFFFFF;
+    /* padding: 4px; */
+    margin: 0px 10px 0px 10px;
 }
 
-p.sectionBrown {
+.figureImg {
+    padding: 4px;
+}
+
+.figureCaption {
+    font-size: 11px;
+}
+
+.aboutMeSection {
+    margin: 5px 0px 20px 0px;
+    padding: 10px 10px 5px 10px;
+    color: #FFFFFF;
+    font-size: 18px; 
+    /* text-align: center; */
+    /* display: inline-block; */
+    /* float: left; */
+    filter: drop-shadow(5px 5px 4px #666666);
+}
+
+.aboutMeCopy {
+    margin: 10px 0px 5px 0px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 14px; 
+    /* text-align: center; */
+    /* display: inline-block; */
+    /* float: left; */
+}
+
+.sectionBrown {
     background-color: #311D00;
 }
 
-p.sectionRed {
+.sectionWine {
     background-color: #6F263D;
 }
 
-p.sectionBlue {
+.sectionBlue {
     background-color: #041E42;
 }
 
-p.sectionYellow {
+.sectionYellow {
     background-color: #FFB81C;
 }
 
-p.sectionBlack {
+.sectionBlack {
     background-color: #000000;
+}
+
+.sectionPurple {
+    background-color: #421C52;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+li {
+    /* border: 1px solid green; */
+    margin: 5px 0px 0px 20px;
 }
 
 .topTenList {
@@ -53,3 +103,18 @@ p.sectionBlack {
     border: red solid 2px;
     width: 400px;
 }
+
+/* ul {
+    border: 1px dotted orange;
+    display: inline-block;
+    margin: 10px 0px 0px 0px;
+}
+  
+li {
+    border: 1px solid green;
+    display: inline-block;
+    width: 15%;
+    height: 85px;
+    vertical-align: middle;
+    padding: 10px;
+} */

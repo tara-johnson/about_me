@@ -15,221 +15,189 @@ console.log('The user said their name is ' + userName);
 // Ask the first guessing game question in an alert
 var answer1 = prompt('Do I have blue eyes?');
 
-//create function for first question
+// Create function for first question
 function firstQuestion (){
-// Tell user if they are right or wrong
-if (answer1.toLowerCase() === 'yes' || answer1.toLowerCase() === 'y'){
-    // Wrong answer to Q1
-    alert('Take another look. They\'re brown! :)');
-
-    // Log wrong answer to Q1 in console
-    console.log('The user got the wrong answer to Q1 (yes)');
-
-} else (answer1.toLowerCase() === 'no' || answer1.toLowerCase() === 'n');{
-    // Correct answer to Q1
-    alert('That\'s right! My eyes are brown.');
-
-    // Log correct answer to Q1 in console
-    console.log('The user got the correct answer to Q1 (no)');
-    
-    // Tally +1 for correct answer
-    correctAnswer++;
-    console.log('The user has answered ' + correctAnswer + ' questions correctly.');
-    } 
-// else {
-    //     // Add force to answer question
-    //     while (answer1 === ''){
-        //         answer1 = prompt('At least take a guess.');
-        //     }
-        // }
+    // Tell user if they are right or wrong
+    if (answer1.toLowerCase() === 'yes' || answer1.toLowerCase() === 'y'){
+      // Wrong answer to Q1
+      alert('Take another look. They\'re brown! :)');
+  
+      // Log wrong answer to Q1 in console
+      console.log('The user got the wrong answer to Q1 (yes)');
+  
+    } else {
+      (answer1.toLowerCase() === 'no' || answer1.toLowerCase() === 'n');
+      // Correct answer to Q1
+      alert('That\'s right! My eyes are brown.');
+  
+      // Log correct answer to Q1 in console
+      console.log('The user got the correct answer to Q1 (no)');
+  
+      // Tally +1 for correct answer
+      correctAnswer++;
+      console.log('The user has answered ' + correctAnswer + ' questions correctly.');
+    }
 }
 
-//ask first question
+    // Functionality to force user to answer question. This may be used for all true and false questions.
+    //   } else {
+    //     //Add force to answer question
+    //     while (answer1 === ''){
+    //     answer1 = prompt('Take a guess. Do I have blue eyes?');
+    //     }
+    //   }
+
 firstQuestion();
 
 // Ask the second guessing game question in an alert
 var answer2 = prompt('Am I from Seattle?');
 
-//create function for second question
+// Create function for second question
 function secondQuestion(){
+    // Tell user if they are right or wrong
+    if (answer2.toLowerCase() === 'yes' || answer2.toLowerCase() === 'y'){
+        // Wrong answer to Q2
+        alert('Nope. I grew up in Cleveland, Ohio.');
 
-// Tell user if they are right or wrong
-if (answer2.toLowerCase() === 'yes' || answer2.toLowerCase() === 'y'){
-    // Wrong answer to Q2
-    alert('Nope. I grew up in Cleveland, Ohio.');
+        // Log wrong answer to Q2 in console
+        console.log('The user got the wrong answer to Q2 (yes)');
 
-    // Log wrong answer to Q2 in console
-    console.log('The user got the wrong answer to Q2 (yes)');
+    } else {
+        (answer2.toLowerCase() === 'no' || answer2.toLowerCase() === 'n');
+        // Correct answer to Q2
+        alert('You\'re right, I\'m not from Seattle! I grew up in Cleveland, Ohio.');
 
-} else (answer2.toLowerCase() === 'no' || answer2.toLowerCase() === 'n');{
-    // Correct answer to Q2
-    alert('You\'re right, I\'m not from Seattle! I grew up in Cleveland, Ohio.');
+        // Log correct answer to Q2 in console
+        console.log('The user got the correct answer to Q2 (no)');    
 
-    // Log correct answer to Q2 in console
-    console.log('The user got the correct answer to Q2 (no)');    
-
-    // Tally +1 for correct answer
-    correctAnswer++;
-    console.log('The user has answered ' + correctAnswer + ' questions correctly.');
-
-} 
-// else {
-    //     // Add force to answer question
-    //     while (answer2 === ''){
-        //         answer2 = prompt('At least take a guess!');
-        //     }
-        // }
-        
-        // Ask the third guessing game question in an alert
-    }
+        // Tally +1 for correct answer
+        correctAnswer++;
+        console.log('The user has answered ' + correctAnswer + ' questions correctly.');
+    }    
+}
 
 secondQuestion();
 
+//Ask the third guessing game question in an alert
 var answer3 = prompt('Have I lived in more than 3 states?');
 
-
-//create funtion for third question
-function thirdQuestion(){
+// Create function for third question
+function thirdQuestion(){        
+    // Tell user if they are right or wrong
+    if (answer3.toLowerCase() === 'yes' || answer3.toLowerCase () === 'y'){
+        // Right answer to Q3
+        alert('That\'s right, ' + userName + '. I\'ve lived in four states. More on that later.');
         
-// Tell user if they are right or wrong
-if (answer3.toLowerCase() === 'yes' || answer3.toLowerCase () === 'y'){
-    // Right answer to Q3
-    alert('That\'s right, ' + userName + '. I\'ve lived in four states. More on that later.');
-    
-    // Log correct answer to Q3 in console
-    console.log('The user got the correct answer to Q3 (yes)');    
+        // Log correct answer to Q3 in console
+        console.log('The user got the correct answer to Q3 (yes)');    
 
-    // Tally +1 for correct answer
-    correctAnswer++;
-    console.log('The user has answered ' + correctAnswer + ' questions correctly.');
+        // Tally +1 for correct answer
+        correctAnswer++;
+        console.log('The user has answered ' + correctAnswer + ' questions correctly.');
 
-} else (answer3.toLowerCase() === 'no' || answer3.toLowerCase() === 'n');{
-    // Wrong answer to Q3
-    alert('Wrong! I\'ve lived in four states. More on that later.');
-    
-    // Log wrong answer to Q3 in console
-    console.log('The user got the wrong answer to Q3 (no)');
-
-} 
-// else {
-//     // Add force to answer question
-//     while (answer3 === ''){
-//         answer3 = prompt('At least take a guess!');
-//     }
-// }
+    } else {
+        (answer3.toLowerCase() === 'no' || answer3.toLowerCase() === 'n');
+        // Wrong answer to Q3
+        alert('Wrong! I\'ve lived in four states. More on that later.');
+        
+        // Log wrong answer to Q3 in console
+        console.log('The user got the wrong answer to Q3 (no)');
+    }
 }
-
 
 thirdQuestion();
 
 // Ask the fourth guessing game question in an alert
 var answer4 = prompt('Do I have any pets?');
 
-//create function for fourth question
+// Create function for fourth question
 function fourthQuestion(){
 
-// Tell user if they are right or wrong
-if (answer4.toLowerCase() === 'yes' || answer4.toLowerCase() === 'y'){
-    // Wrong answer to Q4
-    alert('Nope, no pets. I did have a fish named Taco once, though. \nI love tacos.');
-    
-    // Log wrong answer to Q4 in console
-    console.log('The user got the wrong answer to Q4 (yes)');
+    // Tell user if they are right or wrong
+    if (answer4.toLowerCase() === 'yes' || answer4.toLowerCase() === 'y'){
+        // Wrong answer to Q4
+        alert('Nope, no pets. I did have a fish named Taco once, though. \nI love tacos.');
+        
+        // Log wrong answer to Q4 in console
+        console.log('The user got the wrong answer to Q4 (yes)');
 
-} else (answer4.toLowerCase() === 'no' || answer4.toLowerCase() === 'n');{
-    // Right answer to Q4
-    alert('Right, no pets. I did have a fish named Taco once, though. \nI love tacos.');
+    } else { (answer4.toLowerCase() === 'no' || answer4.toLowerCase() === 'n');
+        // Right answer to Q4
+        alert('Right, no pets. I did have a fish named Taco once, though. \nI love tacos.');
 
-    // Log correct answer to Q4 in console
-    console.log('The user got the correct answer to Q4 (no)');
+        // Log correct answer to Q4 in console
+        console.log('The user got the correct answer to Q4 (no)');
 
-    // Tally +1 for correct answer
-    correctAnswer++;
-    console.log('The user has answered ' + correctAnswer + ' questions correctly.');   
-
-} 
-// else {
-//     // Add force to answer question
-//     while (answer4 === ''){
-//         answer4 = prompt('At least take a guess!');
-//     }
-// }
+        // Tally +1 for correct answer
+        correctAnswer++;
+        console.log('The user has answered ' + correctAnswer + ' questions correctly.');
+    }
 }
 
-
 fourthQuestion();
+
 // Ask the fifth guessing game question in an alert
 var answer5 = prompt('Do I love tacos?');
 
-
-//create function for fifth question
+// Create function for fifth question
 function fifthQuestion(){
 
-// Tell user if they are right or wrong
-if (answer5.toLowerCase() === 'yes' || answer5.toLowerCase() === 'y'){
-    // Right answer to Q5
-    alert('I gave this one away. It\'s true, I love tacos.');
+    // Tell user if they are right or wrong
+    if (answer5.toLowerCase() === 'yes' || answer5.toLowerCase() === 'y'){
+        // Right answer to Q5
+        alert('I gave this one away. It\'s true, I love tacos.');
 
-    // Log correct answer to Q5 in console
-    console.log('The user got the correct answer to Q5 (yes)');
+        // Log correct answer to Q5 in console
+        console.log('The user got the correct answer to Q5 (yes)');
 
-    // Tally +1 for correct answer
-    correctAnswer++;
-    console.log('The user has answered ' + correctAnswer + ' questions correctly.');
+        // Tally +1 for correct answer
+        correctAnswer++;
+        console.log('The user has answered ' + correctAnswer + ' questions correctly.');
 
-} else (answer5.toLowerCase() === 'no' || answer5.toLowerCase() === 'n');{
-    // Wrong answer to Q5
-    alert('C\'mon, I just told you. I LOVE tacos!');
+    } else {
+        (answer5.toLowerCase() === 'no' || answer5.toLowerCase() === 'n');
+        // Wrong answer to Q5
+        alert('C\'mon, I just told you. I LOVE tacos!');
 
-    // Log wrong answer to Q5 in console
-    console.log('The user got the wrong answer to Q5 (no)');
-
-}
-// else {
-//     // Add force to answer question
-//     while (answer5 === ''){
-//         answer5 = prompt('At least take a guess!');
-//     }
-// }
+        // Log wrong answer to Q5 in console
+        console.log('The user got the wrong answer to Q5 (no)');
+    }
 }
 
 fifthQuestion();
 
-
 // Ask the sixth guessing game question in an alert
 var answer6 = prompt('How many years have I lived in Seattle');
 
-
+// Create function for sixth question
 function sixthQuestion(){
-// Tell user if they are right or wrong
-
-if (answer6 === '12'){
-    // Right answer to Q6
-    alert('You got it! I\'ve lived in Seattle for 12 years.');
-
-    // Tally +1 for correct answer
-    correctAnswer++;
-    console.log('The user has answered ' + correctAnswer + ' questions correctly.');
-
-} else {
-    // Wrong answer to Q6. Allow user to guess 4 times.
-    var counterQ6 = 0;
-    while (counterQ6 < 3 && answer6 !== '12'){
+    // Tell user if they are right or wrong
+    if (answer6 === '12'){
+        // Right answer to Q6
+        alert('You got it! I\'ve lived in Seattle for 12 years.');
+        // Tally +1 for correct answer
+        correctAnswer++;
+        console.log('The user has answered ' + correctAnswer + ' questions correctly.');
+    
+        } else {
+        // Wrong answer to Q6. Allow user to guess 4 times.
+        var counterQ6 = 0;
+        while (counterQ6 < 3 && answer6 !== '12'){
         // Answer is more than 12
-        if (answer6 > 12){
+            if (answer6 > 12){
             answer6 = prompt('Not quite that long. Hmm. Guess again.');
             counterQ6++;
             console.log(counterQ6);
-        
+
         // Answer is less than 12    
-        } else {
+            } else {
             (answer6 < 12)
             answer6 = prompt('A little longer than that. Take another stab at it.');
             counterQ6++;
             console.log(counterQ6);
+            }
         }
     }
-}
 }
 
 sixthQuestion();
@@ -239,8 +207,8 @@ var state = ['michigan', 'new york']
 var maxGuessQ7 = 6;
 var wrongGuess = 0;
 
-// Create function for guessing states I've lived in
-function guessState(){
+// Create function for seventh question
+function question7(){
     while (wrongGuess < maxGuessQ7){
         var answer7 = prompt('What states, other than Ohio and Washington, have I lived in?');
         if (state.includes(answer7) === true){
@@ -266,9 +234,8 @@ function guessState(){
     }
 }
 
-// Call function for guessing states I've lived in question
-guessState();
+question7();
 
 // Show user how many questions they got right
-var endGame = alert('Thanks for getting to know me, ' + userName + '. You got ' + correctAnswer + ' out of 7 questions correct!');
+alert('Thanks for getting to know me, ' + userName + '. You got ' + correctAnswer + ' out of 7 questions correct!');
 console.log('Game over. The user got ' + correctAnswer + ' out of 7 questions correct.');
